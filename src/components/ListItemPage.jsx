@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const ListItemPage = () => {
 
     const localPage = localStorage.getItem('page') ? parseInt(localStorage.getItem('page')) : 1;
-    const [items, setItems] = useState([{id: 1, email: "george.bluth@reqres.in", first_name: "George", last_name: "Bluth", avatar: "https://reqres.in/img/faces/1-image.jpg"}]);
+    const [items, setItems] = useState([]);
     const [page, setPage] = useState(localPage);
     const [totalPages, setTotalPages] = useState(1);
     const [loading, setLoading] = useState(false)

@@ -29,13 +29,12 @@ const ItemDetailPage = () => {
       {loading ? (
         <p>Loading...</p>
       ) : item ? (
-        <div className="border rounded-lg shadow p-4">
+        <div>
           <img
             src={item.avatar}
             alt={item.first_name}
-            className="w-full h-64 object-cover mb-4"
           />
-          <h1 className="text-2xl font-bold">{item.first_name} {item.last_name}</h1>
+          <h1>{item.first_name} {item.last_name}</h1>
           <p>E-mail: {item.email}</p>
           <br />
           <div className="card-actions">

@@ -7,7 +7,7 @@ const IndexPage = () => {
         <h1>App actions</h1>
         <p>Please, select the action you whant to see:</p>
      
-        <div className="border rounded-lg shadow p-4">
+        <div>
             <Link to={`/items`}>
                 <button className="btn primary-btn">See users list</button>
             </Link>
