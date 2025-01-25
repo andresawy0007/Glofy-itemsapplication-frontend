@@ -16,7 +16,7 @@ const LocalStorageController = {
 
     localStorage.setItem(key, JSON.stringify(item));
   },
-  /**
+  /** 
    * Retrieves an item from local storage by key, checking if it has expired.
    * If the item has expired, it is removed from local storage and null is returned.
    *
