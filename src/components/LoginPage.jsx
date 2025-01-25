@@ -47,7 +47,7 @@ export default function LoginPage() {
     try {
         const response = await Axios.post('/login', { email, password });
         localStorage.setItem('token', response.data.token); // Save token in local storage
-        //setIsAuthenticated(true); // Update authentication status
+        setIsAuthenticated(true); // Update authentication status
     } catch (err) {
         console.log(err)
         setErrorMessage('Invalid credentials');
